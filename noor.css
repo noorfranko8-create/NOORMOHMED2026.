@@ -1,0 +1,687 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #07111f;
+    color: white;
+}
+
+
+/* ================= HEADER ================= */
+
+header {
+    width: 100%;
+    height: 70px;
+
+    background-color: rgba(3, 19, 45, 0.85);
+
+    /* خلفية شبه شفافة لترتبط بالتصميم */
+    backdrop-filter: blur(8px);
+
+    padding: 0 7%;
+
+    display: flex;
+    align-items: center;
+
+    border-bottom: 1px solid rgba(23, 36, 58, 0.5);
+
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.right {
+    width: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.right img {
+    width: 120px;
+    height: auto;
+}
+
+
+/* Navigation */
+
+ul {
+    display: flex;
+    align-items: center;
+
+    gap: 40px;
+
+    list-style: none;
+}
+
+ul li a {
+    color: white;
+
+    text-decoration: none;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    transition: 0.3s;
+}
+
+ul li a:hover {
+    color: #33a2ff;
+}
+
+
+/* ================= HERO ================= */
+
+.ELM7TO {
+    width: 100%;
+
+    min-height: calc(100vh - 70px);
+
+    display: flex;
+    align-items: center;
+
+    /*
+        التدرج الداكن من الشمال
+        + الصورة في اليمين
+    */
+
+    background-image:
+        linear-gradient(
+            to right,
+            #041022 0%,
+            #041022 35%,
+            rgba(4, 16, 34, 0.6) 65%,
+            transparent 100%
+        ),
+        url("ChatGPT Image 23 سبتمبر 2026، 08_17_35 م.png");
+
+    background-size: cover;
+
+    background-position: right center;
+
+    background-repeat: no-repeat;
+
+    position: relative;
+}
+
+
+/* ================= TEXT ================= */
+
+.elklam {
+    width: 50%;
+
+    padding: 0 0 0 7%;
+
+    z-index: 2;
+}
+
+.elklam h1 {
+    color: #33a2ff;
+
+    font-size: 18px;
+
+    margin-bottom: 8px;
+}
+
+.elklam h2 {
+    font-size: 52px;
+
+    line-height: 1.1;
+
+    margin-bottom: 12px;
+}
+
+.elklam h2 span {
+    color: white;
+}
+
+.elklam h2 strong {
+    color: #33a2ff;
+}
+
+.elklam h3 {
+    font-size: 22px;
+
+    margin-bottom: 15px;
+
+    font-weight: 500;
+}
+
+.elklam p {
+    max-width: 480px;
+
+    color: #c5cedb;
+
+    font-size: 15px;
+
+    line-height: 1.6;
+
+    margin-bottom: 25px;
+}
+
+
+/* ================= BUTTON ================= */
+
+button {
+    width: 160px;
+    height: 44px;
+
+    border: none;
+
+    border-radius: 25px;
+
+    background-color: #33a2ff;
+
+    color: white;
+
+    font-size: 14px;
+
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition: 0.3s;
+
+    box-shadow:
+        0 4px 15px rgba(51, 162, 255, 0.3);
+}
+
+button:hover {
+    background-color: #2087e0;
+
+    transform: translateY(-2px);
+
+    box-shadow:
+        0 6px 20px rgba(51, 162, 255, 0.5);
+}
+
+
+/* ================= ABOUT SECTION ================= */
+
+.ELM7TO2 {
+    background-color: #ffffff;
+
+    min-height: 90vh;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+    padding: 0 7%;
+
+    gap: 50px;
+}
+
+
+/* الكلام شمال */
+
+.elklam2 {
+    width: 50%;
+
+    order: 1;
+
+    text-align: left;
+}
+
+
+/* الصورة يمين */
+
+.ELM7TO2 img {
+    width: 450px;
+    height: 450px;
+
+    order: 2;
+
+    object-fit: cover;
+
+    object-position: center;
+
+    border-radius: 50%;
+
+    border: 3px solid #243b55;
+}
+
+.elklam2 h1 {
+    padding: 50px 0px;
+
+    font-size: large;
+
+    color: #0008ff;
+}
+
+.elklam2 h2 {
+    font-size: 55px;
+
+    color: #000000;
+}
+
+.elklam2 p {
+    padding: 50px 0px;
+
+    color: #000000;
+}
+
+
+/* ================= SOCIAL LINKS ================= */
+
+.social-links {
+    display: flex;
+
+    gap: 15px;
+
+    margin-top: 10px;
+}
+
+.social-links a {
+    color: #333;
+
+    font-size: 20px;
+
+    text-decoration: none;
+
+    transition: transform 0.2s;
+}
+
+
+/* تأثير عند تمرير الماوس */
+
+.social-links a:hover {
+    transform: scale(1.2);
+}
+
+
+/* تأثير إضافي */
+
+.social-links a:hover {
+    transform: scale(1.25) translateY(-3px);
+
+    filter: drop-shadow(
+        0 0 8px currentColor
+    );
+}
+
+
+/* ================= FOOTER ================= */
+
+footer {
+    background-color: #03132d;
+
+    padding: 30px 7%;
+
+    border-top: 1px solid rgba(23, 36, 58, 0.5);
+
+    display: flex;
+
+    flex-direction: column;
+
+    /* جعل العناصر فوق بعضها */
+
+    gap: 25px;
+}
+
+.footer-top {
+    width: 100%;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+}
+
+.footer-logo {
+    width: 120px;
+
+    height: auto;
+}
+
+.footer-menu {
+    display: flex;
+
+    align-items: center;
+
+    gap: 40px;
+
+    list-style: none;
+}
+
+
+/* ================= FOOTER SOCIAL ================= */
+
+.footer-social {
+    display: flex;
+
+    gap: 30px;
+
+    justify-content: center;
+
+    align-items: center;
+
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+
+    padding-top: 20px;
+}
+
+
+/* حجم الأيقونات */
+
+.footer-social a {
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    transition: transform 0.3s ease;
+}
+
+.footer-social svg {
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ألوان SVG */
+
+.ws-icon svg {
+    fill: #25D366;
+}
+
+.fb-icon svg {
+    fill: #1877F2;
+}
+
+.ig-icon svg {
+    fill: #fcf5f6;
+}
+
+
+/* تأثير التكبير */
+
+.footer-social a:hover {
+    transform: scale(1.25);
+}
+
+
+/* Google */
+
+.google-icon svg {
+    fill: #EA4335;
+}
+
+
+/* Phone */
+
+.phone-icon svg {
+    fill: #33a2ff;
+}
+
+
+/* Footer top links */
+
+.footer-top a {
+    list-style: none;
+
+    display: flex;
+
+    display: inline-block;
+
+    width: 40px;
+    height: 40px;
+
+    transition: transform 0.3s ease;
+}
+
+
+/* ================= RESPONSIVE ================= */
+
+@media (max-width: 900px) {
+
+    .ELM7TO {
+
+        background-image:
+            linear-gradient(
+                to top,
+                #041022 40%,
+                rgba(4, 16, 34, 0.7) 100%
+            ),
+            url("ChatGPT Image 23 سبتمبر 2026، 08_17_35 م.png");
+
+        padding: 40px 0;
+    }
+
+    .elklam {
+
+        width: 100%;
+
+        padding: 0 5%;
+    }
+}
+@media (max-width: 900px) {
+
+    /* HEADER */
+    header {
+        padding: 0 5%;
+    }
+
+    ul {
+        gap: 20px;
+    }
+
+
+    /* HERO */
+
+    .ELM7TO {
+        min-height: calc(100vh - 70px);
+
+        padding: 50px 5%;
+
+        background-position: center;
+    }
+
+    .elklam {
+        width: 60%;
+        padding: 0;
+    }
+
+    .elklam h2 {
+        font-size: 45px;
+    }
+
+
+    /* ABOUT */
+
+    .ELM7TO2 {
+        padding: 60px 5%;
+        gap: 30px;
+    }
+
+    .ELM7TO2 img {
+        width: 350px;
+        height: 350px;
+    }
+
+    .elklam2 {
+        width: 50%;
+    }
+
+    .elklam2 h2 {
+        font-size: 42px;
+    }
+
+}
+
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+    
+
+    header {
+        height: auto;
+        padding: 15px 5%;
+    }
+
+    .right {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .right img {
+        width: 100px;
+    }
+
+    ul {
+        width: 100%;
+        justify-content: center;
+        gap: 20px;
+    }
+
+    ul li a {
+        font-size: 11px;
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .ELM7TO2 {
+        display: flex;
+        flex-direction: column;
+
+        align-items: center;
+        justify-content: center;
+
+        padding: 60px 5%;
+        gap: 35px;
+    }
+
+    /* الصورة فوق */
+    .ELM7TO2 img {
+        order: 1;
+
+        width: 260px;
+        height: 260px;
+
+        flex-shrink: 0;
+    }
+
+    /* الكلام تحت الصورة */
+    .elklam2 {
+        order: 2;
+
+        width: 100%;
+
+        text-align: center;
+    }
+
+    .elklam2 h1 {
+        padding: 0 0 20px 0;
+    }
+
+    .elklam2 h2 {
+        font-size: 35px;
+        line-height: 1.2;
+    }
+
+    .elklam2 p {
+        padding: 25px 0 0 0;
+
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+}
+/* ================= VERY SMALL PHONES ================= */
+
+@media (max-width: 380px) {
+
+    .right img {
+        width: 80px;
+    }
+
+    ul {
+        gap: 8px;
+    }
+
+    ul li a {
+        font-size: 9px;
+    }
+
+    .elklam h2 {
+        font-size: 32px;
+    }
+
+    .elklam h3 {
+        font-size: 16px;
+    }
+
+    .ELM7TO2 img {
+        width: 240px;
+        height: 240px;
+    }
+
+    .elklam2 h2 {
+        font-size: 30px;
+    }
+
+}
+.welcome-message {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+    background: rgba(3, 3, 77, 0.95);
+    color: white;
+
+    padding: 35px 45px;
+    border-radius: 20px;
+
+    text-align: center;
+
+    z-index: 9999;
+
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.4);
+
+    animation: welcomeShow 0.6s ease;
+}
+
+.welcome-message h2 {
+    margin-bottom: 10px;
+}
+
+.welcome-message p {
+    margin: 0;
+    color: #ddd;
+}
+
+
+@keyframes welcomeShow {
+
+    from {
+        opacity: 0;
+        transform: translate(-50%, -45%);
+    }
+
+    to {
+        opacity: 1;
+        transform: translate(-50%, -50%);
+    }
+
+}
